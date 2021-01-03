@@ -1,0 +1,86 @@
+<html>
+<head>
+  <style>
+/*  html, body {
+    height: 100%;
+    margin: 0;
+}
+.outer {
+    height:100%;
+    overflow: hidden;
+}
+.inner {
+    height:200%;
+    width:100%;
+    -webkit-animation:mymove 5s linear infinite;
+
+    animation:mymove 5s linear infinite;
+    background-image: url('http://localhost/final.png');
+    background-size: 100% 50%;
+}
+@-webkit-keyframes mymove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% -100%;
+    }
+}
+@keyframes mymove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% -100%;
+    }
+}*/
+.tech-slideshow {
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 6708px;
+  width: 100%;
+  background: url(http://localhost/final.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 150s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: -200px 0px;
+  animation: moveSlideshow 150s linear infinite;
+}
+
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateY(-66.6666%);
+  }
+}
+  </style>
+</head>
+<body>
+<!--<div class="outer">
+    <div class="inner"></div>
+
+
+</div>-->
+
+<div class="tech-slideshow" >
+  <div class="mover-1"></div>
+  <div class="mover-2"></div>
+</div>
+</body>
+</html>
